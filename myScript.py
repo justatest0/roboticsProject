@@ -69,7 +69,7 @@ def trilateration(pose, prox, motion):
     # Return the Goal's coordinates and relative orientation
     return [xGoal, yGoal,  d3, relOrient]
 
-	
+
 with Morse() as simu:
 
     # Definition of the sensors and the actuator
@@ -86,3 +86,5 @@ with Morse() as simu:
     print('Trilateration Mode - Finding the Goal')
     goalAt = trilateration(pose, prox, motion)
     print('Trilateration Mode - Goal Found at:', goalAt[0], goalAt[1])
+
+    print("commettere")
